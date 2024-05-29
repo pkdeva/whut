@@ -12,8 +12,7 @@ Whut is a command-line tool that allows you to search the internet using Google 
 
 You can install Whut from PyPI:
 
-```sh
-pip install whut
+```pip install whut```
 
 
 ## Usage
