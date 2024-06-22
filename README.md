@@ -58,7 +58,7 @@ Example:
 You can customize the search prompt by using the `-C` or `-c` option followed by a colon (`:`) and then your query:
 
 
-```whut -c "Please provide detailed information about: Your search query""```   
+```whut -C "Please provide detailed information about: Your search query"```   
 
 Example:
     

@@ -29,7 +29,7 @@ def main():
     parser = argparse.ArgumentParser(description='Search the internet from the terminal using Google Generative AI')
     parser.add_argument('query', nargs='+', help='Search query')
     parser.add_argument('-C', '--custom', action='store_true', help='Run in custom prompt mode, passing the custom prompt and query')
-    parser.add_argument('-c', '--custom', action='store_true', help='Run in custom prompt mode, passing the custom prompt and query')
+    parser.add_argument('-c', action='store_true', help='Run in custom prompt mode, passing the custom prompt and query')
     parser.add_argument('-l', type=int, help='Number of lines to get the answer in')
     parser.add_argument('-set', action='store_true', help='Configure your own API key')
     
@@ -41,7 +41,7 @@ def main():
     
     query = ' '.join(args.query)
     
-    if args.custom:
+    if args.custom or args.c:
         if args.l:
             prompt_template = f"Need the answer in like {args.l} lines for this prompt: {query}"
         else:
