@@ -7,20 +7,18 @@ def read_requirements():
 
 setup(
     name='whut',
-    version='0.7.1', 
+    version='0.7.2', 
     packages=find_packages(),
     entry_points={
         'console_scripts': [
             'whut=whut.cli:main',
         ],
     },
-    install_requires=[
-        'google-generativeai',
-    ],
+    install_requires=read_requirements(),  # Use the read_requirements function here
     author='Priyanshu K',
     twitter="https://twitter.com/pkdevaa",
     author_email='priyanshu.txt@gmail.com',
-    description='A CLI tool to instantly search the internet using Google Generative AI in decluttered manner.',
+    description='A CLI tool to instantly search the internet using Google Generative AI in a decluttered manner.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/pkdeva/whut',
