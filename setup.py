@@ -7,7 +7,7 @@ def read_requirements():
 
 setup(
     name='whut',
-    version='0.7.0', 
+    version='0.7.1', 
     packages=find_packages(),
     entry_points={
         'console_scripts': [
