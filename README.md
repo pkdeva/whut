@@ -55,13 +55,14 @@ Example:
     whut -c -l 5 "Sam Altman"
 
 ### Custom Prompt
-You can customize the search prompt by using the -C or --custom option:
+You can customize the search prompt by using the `-C` or `-c` option followed by a colon (`:`) and then your query:
 
-```whut -C "Please provide detailed information about: {query}" "your search query"```   
+
+```whut -c "Please provide detailed information about: Your search query""```   
 
 Example:
     
-    whut -C "Tell me in detail about: {query}" "Sam Altman"
+    whut -C "Tell me in detail about: Sam Altman"
 
 
 
