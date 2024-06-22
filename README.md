@@ -15,6 +15,8 @@ You can install Whut from PyPI:
 
 ```pip install whut```
 
+> Info here: https://pypi.org/project/whut/
+
 
 ## Usage
 ### Basic Search
