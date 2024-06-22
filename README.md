@@ -13,49 +13,55 @@ Whut is a versatile command-line tool that leverages Google Generative AI to sea
 
 You can install Whut from PyPI:
 
-```sh
-pip install whut
+```pip install whut```
 
-Usage
-Basic Search
+
+## Usage
+### Basic Search
 To perform a basic search, simply type:
 
-```whut "your search query"```
+```whut "your search query"```   
 
-    Example: ```whut "Mahatma Gandhi"```
-
-
-Configuration Mode
-
-To set your own API key, use the -set flag:
-
-````whut -set````
+ example:
+            
+    whut "Mahatma Gandhi"
 
 
-Custom Mode
+### Configuration Mode
 
-To pass the query directly to the API, use the -c flag:
+To set your own API key, use the -set flag:    
+
+    whut -set
 
 
-```whut -c "your search query"```
+### Custom Mode
+
+To pass the query directly to the API, use the -c flag:   
 
 
-    Example: ```whut -c "Sam Altman"```
+```whut -c "your search query"```    
 
-Limited Length Mode
+Example: 
+
+    whut -c "Sam Altman"
+
+### Limited Length Mode
 
 To get an answer with a specific number of lines, use the -c flag along with the -l flag:
 
-```whut -c -l <number> "your search query"```
+```whut -c -l <number> "your search query"```    
+Example: 
 
+    whut -c -l 5 "Sam Altman"
 
-    Example: ```whut -c -l 5 "Sam Altman"```
+### Custom Prompt
+You can customize the search prompt by using the -C or --custom option:
 
-Custom Prompt
+```whut -C "Please provide detailed information about: {query}" "your search query"```   
 
-whut -C "Please provide detailed information about: {query}" "your search query"
-
-    Example:```whut -C "Tell me in detail about: {query}" "Sam Altman"```
+Example:
+    
+    whut -C "Tell me in detail about: {query}" "Sam Altman"
 
 
 
